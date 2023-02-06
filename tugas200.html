@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class siswa{
+            nama = "jamal";
+            nis = 25389243;
+            sekolah = "mutu";
+            mapel = "banyak"
+
+            belajar(){
+                return "makanya pinter"
+
+            }
+        }
+
+        class siswaRPL extends siswa{
+            nama = "usep";
+            nis = 765232875;
+            sekolah = "mutu";
+            mapel = "banyak";
+            jurusan = "RPL";
+            mapel_produktif = "mtk";
+
+            
+            belajar_produktif(){
+                return "pintar"
+            }
+        }
+
+        var manusia = new siswaRPL();
+        document.write(manusia.nama)
+        document.write(manusia.belajar())
+
+    </script>
+</body>
+</html>
