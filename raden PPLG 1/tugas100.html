@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         class siswa {
+            nama;
+            kelas;
+            jurusan;
+            tahun_lahir;
+            tahun_sekarang;
+            umur;
+
+            jumlah_umur(){
+                return this.tahun_sekarang - this.tahun_lahir;
+            }
+        }
+
+        var siswa1 = new siswa();
+            siswa1.nama = "syipa";
+            siswa1.kelas = 10;
+            siswa1.jurusan = "PPLG";
+            siswa1.tahun_lahir = 2007;
+            siswa1.tahun_sekarang = 2023;
+
+        var asep = new siswa();
+            asep.nama = "sri";
+            asep.kelas = 11;
+            asep.jurusan = "TKR";
+            asep.tahun_lahir = 2000;
+            asep.tahun_sekarang = 2023;
+
+        var usep = new siswa();
+            usep.nama = "rahayu";
+            usep.kelas = 10;
+            usep.jurusan = "TSM";
+            usep.tahun_lahir = 2022;
+            usep.tahun_sekarang = 2023;
+
+
+            document.write("nama : " + siswa1.nama + '<br />')
+            document.write("kelas : " + siswa1.kelas + '<br />')
+            document.write("jurusan : " + siswa1.jurusan + '<br />')
+            document.write("umur : " + siswa1.jumlah_umur() + '<br />')
+            document.write('<br />')
+            document.write("nama : " + asep.nama + '<br />')
+            document.write("kelas : " + asep.kelas + '<br />')
+            document.write("jurusan : " + asep.jurusan + '<br />')
+            document.write("umur : " + asep.jumlah_umur() + '<br />')
+            document.write('<br />')
+            document.write("nama : " + usep.nama + '<br />')
+            document.write("kelas : " + usep.kelas + '<br />')
+            document.write("jurusan : " + usep.jurusan + '<br />')
+            document.write("umur : " + usep.jumlah_umur() + '<br />')
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var celcius = prompt("masukan angka");
+        var konversi = 9/5 * celcius + 32;
+        document.write(konversi + '<br />')
+        document.write('<br />')
+
+        var fahrensi = prompt("masukan angka");
+        var konversi = 5/9 * (fahrensi - 32);
+        document.write(konversi + '<br />')
+        document.write('<br />')
+
+        var jam = 1;
+        var menit = 2;
+        var detik = 30;
+        var konversi_jam = 3600 * jam;
+        var konversi_menit = 60 * menit;
+        document.write(konversi_jam + konversi_menit + detik + '<br />');
+        document.write('<br />')
+
+        var tahun = prompt("masukan tahun");
+        var kabisat = tahun % 4;
+        
+        if(tahun == 0){
+            document.write("ini tahun kabisat");
+        }else{
+            document.write("ini bukan tahun kabisat");
+        }
+    </script>
+</body>
+</html>

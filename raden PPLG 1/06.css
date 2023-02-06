@@ -1,0 +1,18 @@
+body{
+    background-image: url("https://i.ytimg.com/vi/LpbVjEfGahI/maxresdefault.jpg");
+}
+tr{
+    color: rgb(30, 255, 0);
+}
+p{
+    color: rgb(9, 255, 1);
+    border-radius: 5px;
+}
+button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 255, 42);
+    border-radius: 10px;
+}
+table{
+    background-color: rgb(0, 0, 0);
+}

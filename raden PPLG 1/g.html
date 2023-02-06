@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     var list_siswa = [
+    //     {
+    //         nama : "jamal",
+    //         barang : [
+    //             {
+    //                 nama : "beras", harga : "Rp.10.000", jumlah : "1 liter",
+    //                 nama : "nabati", harga : "Rp.2.000", jumlah : "1",
+    //             },
+    //     ]
+    //     },
+    // ]
+
+    //     list_siswa.forEach(siswa =>{
+    //     document.write("nama : " + siswa.nama + '<br />');
+    //     })
+       
+        // var list_siswa = ["jamal", "kamal", "usep"];
+        // var nama = {nama : "jamal", umur : 18, kelas : "12"};
+
+        var pembeli =[
+            {
+                nama : "jamal",
+                barang : [ 
+                    {nama : "roti", harga : 1000, jumlah : 1},
+                    {nama : "mobil", harga : 10000, jumlah : 2} 
+                ]
+            },
+            {
+                nama : "kamal",
+                barang : [ 
+                    {nama : "susu", harga : 1000, jumlah : 1},
+                    {nama : "motor", harga : 10000, jumlah : 2} 
+                ]
+            }   
+        ]
+
+        pembeli.forEach(p => {
+            document.write(`nama : ${p.nama}` + '<br />')
+            p.barang.forEach(barang => {
+                document.write(`barang : ${barang.nama} ( ${barang.harga * barang.jumlah}), ` + '<br />');
+
+
+                // document.write(`barang : ${barang.nama}` + '<br />')
+                // document.write(`harga : ${barang.harga}` + '<br />')
+                // document.write(`jumlah : ${barang.jumlah}` + '<br />')
+                
+
+            })
+            document.write('<hr />')
+            // document.write(`barang : ${p.barang[0].nama}` + '<br />')
+            // document.write(`harga : ${p.barang[0].harga}` + '<br />')
+            // document.write(`jumlah : ${p.barang[0].jumlah}` + '<br />')
+            // document.write(`barang : ${p.barang[1].nama}` + '<br />')
+            // document.write(`harga : ${p.barang[1].harga}` + '<br />')
+            // document.write(`jumlah : ${p.barang[1].jumlah}` + '<hr />')
+        });
+        
+        // document.write('nama : ${pembeli[0].nama}');
+    </script>   
+</body>
+</html>

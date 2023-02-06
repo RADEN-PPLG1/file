@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="uewfhi.css">
+</head>
+<body>
+    <script>
+        // data data siswa
+        //     Nama
+        //     kelas
+        //     nilai
+        //         nilai_mtk
+        //         nilai_binggris
+        //         nilai_fisika
+
+        var KKM = 75
+        var list_siswa = [
+        {
+            nama : "jamal",
+            kelas : "10, PPLG 1",
+            nilai : {
+                mtk : "-64", binggris : "-31", fisika : "-63"
+            }
+        },
+        {
+            nama : "kamal",
+            kelas : "10, PPLG 1",
+            nilai : {
+                mtk : "-75", binggris : "-24", fisika : "-64"
+            }
+        }
+        ]
+
+        list_siswa.forEach(siswa =>{
+        document.write("nama : " + siswa.nama + '<br />');
+        document.write("kalas : " + siswa.kelas + '<br />');
+        document.write("nilai mtk : " + siswa.nilai.mtk + '<br />');
+        document.write("nilai b.inggris : " + siswa.nilai.binggris + '<br />');
+        document.write("nilai fisika : " + siswa.nilai.fisika + '<br />');
+        
+        if(siswa.nilai.mtk > KKM){
+            document.write("ststus : lulus")
+        }else{
+            document.write("ststus : tidak lulus")
+        }
+            document.write("<hr />");
+        })
+        
+        
+        // document.write("nama : " + list_siswa[0].nama + '<br />');
+        // document.write("kalas : " + list_siswa[0].kelas + '<br />');
+        // document.write("nilai mtk : " + list_siswa[0].nilai.mtk + '<br />');
+        // document.write("nilai b.inggris : " + list_siswa[0].nilai.binggris + '<br />');
+        // document.write("nilai fisika : " + list_siswa[0].nilai.fisika + '<br />');
+        // document.write("<hr />");
+        // document.write("nama : " + list_siswa[0].nama + '<br />');
+        // document.write("kalas : " + list_siswa[0].kelas + '<br />');
+        // document.write("nilai mtk : " + list_siswa[0].nilai.mtk + '<br />');
+        // document.write("nilai b.inggris : " + list_siswa[0].nilai.binggris + '<br />');
+        // document.write("nilai fisika : " + list_siswa[0].nilai.fisika + '<br />');
+    </script>
+    </script>
+</body>
+</html>

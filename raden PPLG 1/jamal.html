@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var merpati = {
+            nama : "jamal",
+            warna : "coklat",
+            jumlah_kaki : 2,
+            jumlah_sayap : 2,
+            mata : {
+                warna_mata : "putih",
+                warna_pupil : "merahh",
+            },
+            dipanggil : function (){
+                return "merespon"
+            },
+            tidur : function (){
+                return "tidur di kasur"
+            }
+        }
+
+        
+        document.write("nama : "+ merpati.nama + '<br />');
+        document.write("warna : "+ merpati.warna + '<br />');
+        document.write("jumlah_kaki : "+ merpati.jumlah_kaki + '<br />');
+        document.write("jumlah_sayap : "+ merpati.jumlah_sayap + '<br />');
+        document.write("warna_mata : "+ merpati.mata.warna_mata + '<br />');
+        document.write("warna_pupil : "+ merpati.mata.warna_pupil + '<br />');
+        document.write("perilaku : " + merpati.dipanggil() + '<br />');
+        document.write("tidur :" + merpati.tidur() +'<br/>');
+        
+    </script>
+</body>
+</html>

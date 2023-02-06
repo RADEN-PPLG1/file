@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sapa_orang (nama,nilai){
+            document.write("hallo " + nama + " nilai kamu " + nilai + "<br />")
+        }
+
+        sapa_orang ("jamal" , "-100");
+
+        document.write('<hr />')
+        
+        function penjumlahan (angka_1, angka_2, angka_3){
+            document.write(angka_1 + angka_2 + angka_3 + '<br />')
+        }
+
+        penjumlahan(12,31,42)
+
+        document.write('<hr />')
+
+        function bandingkan (angka1, angka2){
+            if (angka1 > angka2){
+                document.write("angka1 lebih dari angka2")
+            }else{
+                document.write("angka2 lebih dari angka1")
+            }
+        }
+        bandingkan(8,1)
+
+        document.write('<hr />')
+
+        function sapa_orang1 (nama,nilai){
+            document.write(`hallo ${nama}`)
+        }
+
+        sapa_orang1 ("kamal" , "-100");
+    </script>
+</body>
+</html>
